@@ -26,7 +26,7 @@ mycoplasma = st.sidebar.checkbox("Mycoplasma Present")
 # Your Model Coefficients
 intercept = -5.9398
 c_hpv16 = 2.0776
-c_hpv18 = -0.1552
+c_hpv18 = 1.1552
 c_gard = 0.9171
 c_urea = -0.1758
 c_myco = 0.1041
