@@ -25,7 +25,7 @@ col_img, col_txt = st.columns([1, 1])
 
 with col_img:
     # Scientific illustration representing the progression from HPV to Cancer
-    st.image("https://www.nccc-online.org/wp-content/uploads/2021/01/HPV_Infographic_Social_Media_1.png", use_container_width=True)
+    st.image("https://pinkdrive.org/wp-content/uploads/2022/04/cervical-cancer-signs-symptoms.jpg", use_container_width=True)
 
 with col_txt:
     st.markdown("### 🧬 HPV Pathogenesis & Oncogenesis")
