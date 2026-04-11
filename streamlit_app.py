@@ -34,7 +34,7 @@ st.markdown("<h1 class='main-title'>🎀 AI Cervical Cancer Risk Stratification<
 st.markdown("<p class='subtitle'>Integrated Genomics & Vaginal Microbiota Analysis</p>", unsafe_allow_html=True)
 
 # Path to an illustrative image (Using a public URL for health graphics)
-st.image("https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.mmcdubai.ae%2Fhpv%2F&ved=0CBYQjRxqGAoTCLDL4pCP5pMDFQAAAAAdAAAAABCiAQ&opi=89978449", width=400)
+st.image("https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fgloveclinic.com%2Farticle%2Fpreventing-hpv-infection-through-vaccination%2F&ved=0CBYQjRxqGAoTCLDL4pCP5pMDFQAAAAAdAAAAABC-AQ&opi=89978449", width=400)
 
 # 3. DATA & MODEL LOADING
 @st.cache_data
