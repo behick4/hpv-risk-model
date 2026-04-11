@@ -64,13 +64,19 @@ def load_and_train():
 model, scaler, feature_names, coefficients = load_and_train()
 
 # 5. SIDEBAR INPUTS
-st.sidebar.header("📝 Clinical Inputs")
+st.sidebar.header("📝 Clinical Dashboard")
+st.sidebar.markdown("Toggle patient factors below to calculate the real-time risk ratio.")
+
 age = st.sidebar.slider("Patient Age", 18, 75, 35)
+st.sidebar.divider()
+st.sidebar.markdown("**Molecular Markers**")
 h16 = st.sidebar.toggle("HPV 16 Positive")
 h18 = st.sidebar.toggle("HPV 18 Positive")
 gard = st.sidebar.toggle("Gardnerella Presence")
 urea = st.sidebar.toggle("Ureaplasma Presence")
 myco = st.sidebar.toggle("Mycoplasma Presence")
+st.sidebar.divider()
+st.sidebar.markdown("**Clinical Symptoms**")
 dis = st.sidebar.toggle("Abnormal Discharge")
 odo = st.sidebar.toggle("Vaginal Malodor")
 itc = st.sidebar.toggle("Pruritus (Itching)")
