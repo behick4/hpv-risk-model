@@ -91,16 +91,31 @@ col_res, col_weights = st.columns([1, 1])
 
 with col_res:
     st.subheader("📊 AI Risk Assessment")
+    
     if prob < 0.3:
         color, status = "#4CAF50", "LOW RISK"
+        action_title = "✅ Routine Surveillance"
+        action_text = "Standard screening (Pap smear) in 3-5 years is generally sufficient. Maintain vaginal health balance."
     elif prob < 0.7:
         color, status = "#FF9800", "MODERATE RISK"
+        action_title = "⚠️ Increased Vigilance"
+        action_text = "Recommend follow-up testing in 6-12 months. Consider treating underlying dysbiosis (Gardnerella) to reduce inflammatory co-factors."
     else:
         color, status = "#D81B60", "HIGH RISK"
+        action_title = "🚨 Immediate Clinical Action"
+        action_text = "High correlation with dysplastic progression. Referral for Colposcopy and biopsy is strongly recommended regardless of cytology."
 
     st.markdown(f"<h2 style='color: {color}; text-align: center;'>{status}</h2>", unsafe_allow_html=True)
     st.progress(prob)
     st.metric(label="High-Risk Probability", value=f"{prob:.1%}")
+    
+    # THE DYNAMIC RECOMMENDATION BOX
+    st.markdown(f"""
+        <div class='action-box' style='background-color: {color};'>
+            <h3>{action_title}</h3>
+            <p style='font-size: 14px;'>{action_text}</p>
+        </div>
+    """, unsafe_allow_html=True)
 
 with col_weights:
     st.subheader("💡 Statistical Weighting")
@@ -108,7 +123,4 @@ with col_weights:
     st.bar_chart(importance_df.set_index("Factor"), color="#F06292")
 
 st.divider()
-st.info("💡 **Scientific Recommendation:** High probability scores indicate a need for immediate cytology or colposcopy, regardless of symptom severity.")
-
-
-
+st.caption("Disclaimer: This tool is a research prototype for a medical congress and should not replace professional clinical judgment.")
