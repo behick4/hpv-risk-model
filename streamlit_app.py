@@ -11,7 +11,7 @@ import numpy as np
 st.set_page_config(page_title="HPV-Microbiota AI Risk Tool", layout="centered")
 
 st.title("🔬 HPV & Microbiota Risk Predictor")
-st.markdown("### Personalized Cervical Cancer Risk Stratification")
+st.markdown("### Personalised Cervical Cancer Risk Stratification")
 st.write("This AI prototype uses logistic regression weights derived from clinical pilot data.")
 
 # Sidebar for Inputs
