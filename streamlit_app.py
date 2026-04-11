@@ -88,13 +88,6 @@ with col_output:
     else:
         st.success("✅ LOW RISK PROFILE")
 
-    # Feature Importance Visualization
-    st.markdown("---")
-    st.subheader("💡 Statistical Weights")
-    importance_df = pd.DataFrame({"Marker": feature_names, "Weight": coefficients}).sort_values(by="Weight", ascending=False)
-    st.bar_chart(importance_df.set_index("Marker"))
-
-
 
 
 
