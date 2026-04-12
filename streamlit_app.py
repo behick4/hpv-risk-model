@@ -17,7 +17,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # 2. CENTERED TITLE
-st.markdown("<h1 class='main-title'>🎀 AI Cervical Cancer Risk Stratification</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-title'>🎀 AI Cervical Cancer Risk Stratification 🎀 </h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>Evidence-Based Integration of Genomics & Vaginal Microbiota Analysis</p>", unsafe_allow_html=True)
 
 # 3. SCIENTIFIC CONTEXT SECTION (IMAGE + BULLET POINTS)
